@@ -12,4 +12,5 @@ export interface KeycloakOpts {
   clientId: string;
   redirectUri: string;
   enableLogging?: boolean;
+  enabled?: boolean;
 }
