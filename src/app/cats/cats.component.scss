@@ -1,0 +1,38 @@
+.golden{
+    background-image: url('../../assets/goldenframe.png');
+    background-repeat:no-repeat;
+    background-size: contain;
+}
+
+.gframe {
+    border: 10px solid rgba(212, 175, 55, 0.76);
+    background-color: rgba(212, 175, 55, 0.76);
+  }
+
+  .sframe {
+    border: 10px solid rgba(248,248,255);
+    background-color: rgba(248,248,255);
+    color: grey;
+  }
+
+  .bframe {
+    border: 10px solid rgba(80.4, 49.8, 19.6);
+    background-color: rgba(80.4, 49.8, 19.6);
+  }
+
+  .imgframe {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+  
+   }
+
+   .leaderbackground{
+
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    
+   }
+

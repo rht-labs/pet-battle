@@ -18,6 +18,8 @@ export const environment = {
   defaultLanguage: 'en-US',
   supportedLanguages: ['en-US', 'fr-FR'],
   keycloak: {
+    //Option to skip Keycloak setup for local runs 
+    enabled: false, 
     // Url of the Identity Provider
     issuer: 'http://localhost:8080/auth/realms/pbrealm',
 

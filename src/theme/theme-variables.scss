@@ -2,6 +2,14 @@
  * Application global variables.
  */
 
+ 
+// Use Bootstrap defaults for other variables, imported here so we can access all app variables in one place when used
+// in components.
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,100&display=swap');
 // Set Font Awesome font path
 $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 
@@ -14,7 +22,7 @@ $fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
 //
 // Color system
 //
-
+$btn-border-radius :0;
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -48,8 +56,3 @@ $theme-colors: (
   light: $gray-100,
   dark: $gray-800
 );
-
-// Use Bootstrap defaults for other variables, imported here so we can access all app variables in one place when used
-// in components.
-@import "~bootstrap/scss/_functions";
-@import "~bootstrap/scss/_variables";
