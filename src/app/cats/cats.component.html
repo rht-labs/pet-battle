@@ -1,16 +1,31 @@
-<div class="container">
+<div>
+  <div class="row">
+    <div class="col-sm-4 text-center"></div>
+    <div class="col-sm-4 text-center">
+      <img style="width: 80%" src="../../assets/podium.jpg"/>
+      <h1> Leader board</h1>
+      </div>
+      </div>
+<div class="jumbotron-fluid p-3 p-md-5 text-white rounded btn-light leaderbackground">
+
+  <div class="container">
+
   <div class="row mt-5 mb-3">
     <div class="col-sm-4">
-      <div class="card text-center">
-        <img class="card-img-top" [src]="first" alt="Current Top Cat 👑" />
-        <div class="card-body">
-          <h3 class="card-title">🥇</h3>
+    </div>
+    <div class="col-sm-4 ">
+      <div class="card text-center gframe">
+        <img class="card-img-top"  [src]="first" alt="Current Top Cat 👑" />
+        <div class="card-body ">
+          <h5 class="card-title">🥇</h5>
           <p class="card-text">👑 Current TopCat 🐾 {{ firstCount }}</p>
         </div>
       </div>
     </div>
+    </div>
+    <div class="row mt-5 mb-3">
     <div class="col-sm-4">
-      <div class="card text-center">
+      <div class="card text-center sframe">
         <img class="card-img-top" [src]="second" alt="🏵️ Second Place Cat" />
         <div class="card-body">
           <h3 class="card-title">🥈</h3>
@@ -19,7 +34,9 @@
       </div>
     </div>
     <div class="col-sm-4">
-      <div class="card text-center">
+      </div>
+    <div class="col-sm-4 ">
+      <div class="card text-center bframe">
         <img class="card-img-top" [src]="third" alt="Third place cat 🏵️" />
         <div class="card-body">
           <h3 class="card-title">🥉</h3>
@@ -35,11 +52,18 @@
       <span class="spinner-grow spinner-grow-sm" role="status" [hidden]="refreshing" aria-hidden="true"></span>
     </button>
   </div>
+</div>
+</div>
+<br>
+<div class="container-fluid">
 
-  <h5 class="text-center mt-3">Upvote or Downvote your favourite cat to reveal another one ...</h5>
-  <div class="row mt-5">
-    <div class="col-sm-3" *ngFor="let cat of listOfCatCards">
-      <app-catcard *ngIf="gotCats"></app-catcard>
-    </div>
+<div class="alert alert-primary" role="alert">
+<h5 class="text-center mt-3">Upvote or Downvote your favourite cat to reveal another one ...</h5>
+</div>
+<div class="row mt-5">
+  <div class="col-sm-3" *ngFor="let cat of listOfCatCards">
+    <app-catcard *ngIf="gotCats"></app-catcard>
   </div>
+</div>
+</div>
 </div>

@@ -4,6 +4,34 @@
   margin-bottom: $spacer;
 }
 
-.nav-link.dropdown-toggle {
-  cursor: pointer;
+.header-main-wrap {
+	background: #e00;
+	position: relative;
+	z-index: 0;
+}
+
+.header-main span {
+	display: inline-block;
+	/* font-size: 16px; */
+	line-height: 1;
+	color: rgba(255,255,255,0.9);
+	/* text-transform: capitalize; */
+	transition: 0.3s all ease;
+}
+
+
+.header-text {
+	display: inline-block;
+	/* font-size: 16px; */
+	line-height: 1.15;
+	color: rgba(255,255,255,0.9);
+	/* text-transform: capitalize; */
+	transition: 0.3s all ease;
+}
+
+
+
+.headerbackground
+{
+ background-image: linear-gradient( 64.3deg,  rgba(254,122,152,0.81) 17.7%, rgba(255,206,134,1) 64.7%, rgba(172,253,163,0.64) 112.1% );
 }

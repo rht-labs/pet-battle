@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { CatsService } from '../cats.service';
 import { ConfigurationLoader } from '@app/config/configuration-loader.service';
 import { MatomoTracker } from 'ngx-matomo-v9';
-
+import { faThumbsUp, faThumbsDown } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-catcard',
   templateUrl: './catcard.component.html',
@@ -15,7 +15,8 @@ export class CatcardComponent implements OnInit {
   public compOver = false;
   private catId: string;
   private analytics = false;
-
+  private faThumbsup = faThumbsUp;
+  private faThumbsdown=faThumbsDown;
   constructor(
     private catsService: CatsService,
     private configSvc: ConfigurationLoader,

@@ -3,6 +3,7 @@
   "tournamentsUrl": "https://pet-battle-tournament-labs-test.apps.hivec.sandbox1405.opentlc.com",
   "matomoUrl": "https://matomo-labs-ci-cd.apps.hivec.sandbox1405.opentlc.com/",
   "keycloak": {
+    "enabled": true,
     "url": "https://keycloak-labs-test.apps.hivec.sandbox1405.opentlc.com/auth/",
     "realm": "pbrealm",
     "clientId": "pbclient",
