@@ -122,7 +122,8 @@ pipeline {
 			}
 			steps {
 			   sh '''
-         git clone ${GIT_URL} pet-battle
+         git clone ${GIT_URL} pet-battle && cd pet-battle
+         git checkout ${BRANCH_NAME}
          '''
         dir('pet-battle'){
 				  echo '### Lint Helm Chart ###'
