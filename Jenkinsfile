@@ -235,23 +235,7 @@ pipeline {
 
 		// 🏋🏻‍♀️ LOAD TESTING EXAMPLE GOES HERE
 
-		// stage("🥾 Trigger System Tests") {
-		// 	options {
-		// 		skipDefaultCheckout(true)
-		// 	}            
-		// 	agent { label "master" }
-		// 	when {
-		// 		expression { GIT_BRANCH.startsWith("master") || GIT_BRANCH.startsWith("main") }
-		// 	}
-		// 	steps {
-		// 			echo "TODO - Run tests"
-		// 			build job: "system-tests/main", 
-		// 						parameters: [[$class: 'StringParameterValue', name: 'APP_NAME', value: "${APP_NAME}" ],
-		// 													[$class: 'StringParameterValue', name: 'CHART_VERSION', value: "${CHART_VERSION}"],
-		// 													[$class: 'StringParameterValue', name: 'VERSION', value: "${VERSION}"]], 
-		// 						wait: false
-		// 	}
-		// }
+        // 🥾 Trigger System Tests
 
 		// 💥🔨 BLUE / GREEN DEPLOYMENT GOES HERE 
 
